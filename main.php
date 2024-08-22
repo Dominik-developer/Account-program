@@ -39,7 +39,7 @@ include("rejestracja.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="author" content="Dominik Szczepański" />
     <link rel="stylesheet"href="regularne.css" />
-    <script defer src="main.js"></script>
+    <script defer src="JS/main.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 

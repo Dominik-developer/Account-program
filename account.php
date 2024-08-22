@@ -31,9 +31,9 @@ include("user.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="author" content="Dominik Szczepański" />
     <link rel="stylesheet"href="regularne.css" type="text/css" />
-    <script defer src="licznik.js"></script>
-    <script defer src="main.js"></script>
-    <script defer src="reload.js"></script>
+    <script defer src="JS/licznik.js"></script>
+    <script defer src="JS/main.js"></script>
+    <script defer src="JS/reload.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
