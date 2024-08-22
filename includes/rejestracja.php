@@ -76,7 +76,7 @@ if (isset($_POST['email']))
     }				
     
     //Bot or not? Oto jest pytanie!
-    $sekret = "YOUR_API_KEY";
+    $sekret = "YOUR_PRIVATE_API_KEY";
     
     $sprawdz = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$sekret.'&response='.$_POST['g-recaptcha-response']);
     
@@ -232,7 +232,7 @@ function rejestracja()
         }
     ?>	
     <br><br>
-    <div class="g-recaptcha" data-sitekey="6LdIm24pAAAAAH4_1Xzx5sHGRzLgBRNfjJ0P4hzq"></div>
+    <div class="g-recaptcha" data-sitekey="YOUR_PUBLIC_API_KEY"></div>
     
     <?php
         if (isset($_SESSION['e_bot']))
