@@ -10,4 +10,4 @@ Plik wyjściowy to 'main.php'.
 
 Pozdrawiam i zycze miłej zabawy 
 
-                Dominik 
+                Dominik-developer
