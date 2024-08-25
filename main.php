@@ -16,18 +16,12 @@ $komunikat = 'Wyswietleń:' .$licznik;
 
 
 
-require_once("includes.php");
+require_once 'includes.php ';
+require_once 'connect.php';
+
+include_once 'rejestracja.php';
 
 
-/*
-require_once("connect.php");
-
-include("menu_in.php");
-include("hello.php");
-require("login.php");
-include("footer.php");
-include("rejestracja.php");
-*/
 
 ?>
 <html>
