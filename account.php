@@ -9,17 +9,9 @@ if(!isset($_SESSION['zalogowany']))
     exit();
 }
 
-require_once("includes.php");
+require_once 'includes.php ';
 
-/*
-include("menu_out.php");
-include("start.php");
-include("footer.php");
-include("czas.php");
-include("wybor.php");
 
-include("user.php");
-*/
 
 ?>
 <html>
