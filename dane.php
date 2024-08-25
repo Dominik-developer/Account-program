@@ -19,8 +19,8 @@ require_once 'includes.php';
     <meta name="description" content="Konto usera"/>
     <meta name="keywords" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="author" content="Dominik Szczepański" />
-    <link rel="stylesheet"href="regularne.css" type="text/css" />
+    <meta name="author" content="Dominik" />
+    <link rel="stylesheet"href="styles.css" type="text/css" />
 </head>
 
 <body>

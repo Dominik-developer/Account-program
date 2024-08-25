@@ -9,15 +9,9 @@ if(!isset($_SESSION['zalogowany']))
     exit();
 }
 
-require_once("includes.php");
+require_once 'includes.php ';
 
-/*
-include("menu_out.php");
-include("start.php");
-include("footer.php");
-include("czas.php");
-include("wybor.php");
-*/
+
 
 
 ?>
@@ -28,8 +22,8 @@ include("wybor.php");
     <meta name="description" content="Konto usera"/>
     <meta name="keywords" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="author" content="Dominik Szczepański" />
-    <link rel="stylesheet"href="regularne.css" type="text/css" />
+    <meta name="author" content="Dominik " />
+    <link rel="stylesheet"href="styles.css" type="text/css" />
     <script defer src="JS/licznik.js"></script>
     <script defer src="JS/main.js"></script>
     <script defer src="JS/reload.js"></script>

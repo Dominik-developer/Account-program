@@ -17,7 +17,7 @@ $komunikat = 'Wyswietleń:' .$licznik;
 
 
 require_once 'includes.php ';
-require_once 'connect.php';
+require 'connect.php';
 
 include_once 'rejestracja.php';
 
@@ -31,8 +31,8 @@ include_once 'rejestracja.php';
     <meta name="description" content="Logowanie"/>
     <meta name="keywords" content="strona" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="author" content="Dominik Szczepański" />
-    <link rel="stylesheet"href="regularne.css" />
+    <meta name="author" content="Dominik" />
+    <link rel="stylesheet"href="styles.css" />
     <script defer src="JS/main.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>

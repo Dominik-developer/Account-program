@@ -2,13 +2,10 @@
 	
 if (isset($_POST['email']))
 {
-    //Udana walidacja? Załóżmy, że tak!
+    
     $wszystko_OK=true;
     
-    //Sprawdź poprawność nickname'a
     $name = $_POST['name'];
-    
-    //Sprawdzenie długości nicka
     
     if (!preg_match('/^[a-zA-Z]{3,15}$/', $name)) 
     {
@@ -28,7 +25,6 @@ if (isset($_POST['email']))
         $_SESSION['e_name']="Imię może składać się tylko z liter (bez polskich znaków)";
     }*/
     
-    // Sprawdź poprawność adresu email
     $email = $_POST['email'];
     $emailB = filter_var($email, FILTER_SANITIZE_EMAIL);
     
@@ -44,8 +40,6 @@ if (isset($_POST['email']))
         $_SESSION['e_email']="Nie poprawny adres e-mail!";
     }
     
-
-    //Sprawdź poprawność hasła
     $password_1 = $_POST['password_1'];
     $password_2 = $_POST['password_2'];
     
@@ -68,14 +62,12 @@ if (isset($_POST['email']))
 
     $password_hash = password_hash($password_1, PASSWORD_DEFAULT);
     
-    //Czy zaakceptowano regulamin?
     if (!isset($_POST['regulamin']))
     {
         $wszystko_OK=false;
         $_SESSION['e_regulamin']="Potwierdź akceptację regulaminu!";
     }				
     
-    //Bot or not? Oto jest pytanie!
     $sekret = "YOUR_PRIVATE_API_KEY";
     
     $sprawdz = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$sekret.'&response='.$_POST['g-recaptcha-response']);
@@ -88,7 +80,6 @@ if (isset($_POST['email']))
         $_SESSION['e_bot']="Potwierdź, że nie jesteś botem!";
     }		
     
-    //Zapamiętaj wprowadzone dane
     $_SESSION['fr_name'] = $name;
     $_SESSION['fr_email'] = $email;
     $_SESSION['fr_password_1'] = $password_1;
@@ -107,7 +98,6 @@ if (isset($_POST['email']))
         }
         else
         {
-            //Czy email już istnieje?
             $rezultat = $polaczenie->query("SELECT id FROM users WHERE email='$email'");
             
             if (!$rezultat) throw new Exception($polaczenie->error);
@@ -122,8 +112,6 @@ if (isset($_POST['email']))
             
             if ($wszystko_OK==true)
             {
-                //Hurra, wszystkie testy zaliczone, dodajemy gracza do bazy
-                
                 if ($polaczenie->query("INSERT INTO users VALUES (NULL, '$name', '$password_hash', '$email')"))
                 {
                     $_SESSION['udanarejestracja']=true;

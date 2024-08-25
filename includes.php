@@ -210,7 +210,7 @@ function login()
 function footer()
 {
 ?>
-    Dominik Szczepański - regularne.com &copy; 2024  
+    Dominik  - regularne.com &copy; 2024 - <?php echo date('Y'); ?>  
 <?php
 }
 
